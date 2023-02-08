@@ -19,9 +19,13 @@ body{
     margin-bottom: 3rem;
 }
 
+/* Utilities */
+.text-center {
+    text-align: center;
+}
+
 /* Layout */
 .container{
-    text-align: center;
     width: 80%;
     max-width: 1100px;
     margin: 0 auto;
@@ -30,15 +34,15 @@ body{
 
 .row{
     margin-top: 3rem;
-    /* debug */
-    border: 2px solid black;
+    /* debug
+    border: 2px solid black; */
 }
 
 .col{
     float: left;
     width: calc(100% / 3 - (4rem / 3));
-    /* debug */
-    border: 2px solid black;
+    /* debug
+    border: 2px solid black; */
 }
 
 .clearfix::after {
@@ -55,4 +59,30 @@ body{
 .card{
     background-color: #0F0E17;
     color: #FFFFFF;
+}
+
+.card img {
+    width: 100px;
+    float: left;
+}
+
+.card .content {
+    float: left;
+    width: calc(100% - 100px);
+    padding: 1rem;
+}
+
+.card-title {
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-bottom: .3rem;
+}
+
+.card .job {
+    margin-bottom: .3rem;
+}
+
+.card .email {
+    text-decoration: none;
+    color: #3CC1ED;
 }
